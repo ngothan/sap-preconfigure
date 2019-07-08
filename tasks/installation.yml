@@ -26,7 +26,7 @@
   package:
     state: latest
     name: "*"
-  when: sap_preconfigure_update
+  when: sap_preconfigure_update|bool
   check_mode: "{{ sap_preconfigure_installation_check_only }}"
   register: sap_preconfigure_register_packageinstall
 
