@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Bernd Finger
+  author: Bernd Finger <bfinger@redhat.com>, Than Ngo <than@redhat.com>
   description: Prepare a RHEL 8 Server for SAP installation
   company: Red Hat, Inc.
 

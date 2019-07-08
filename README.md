@@ -54,4 +54,5 @@ GNU General Public License v3.0
 Author Information
 ------------------
 
-Bernd Finger
+Bernd Finger <bfinger@redhat.com>
+Than Ngo <than@redhat.com>
