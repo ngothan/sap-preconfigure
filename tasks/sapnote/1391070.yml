@@ -1,18 +1,17 @@
 ---
 # tasks file for sap-preconfigure: configuration
 
-# 04-configure-network-time-and-date.yml
+# Linux-UUID-solutions
 - debug:
-    msg: "SAP note 2772999 Step 4: Configure Network Time and Date"
-
-- name: Start and enable service chronyd
+    msg: "SAP note 1391070: Configure uuidd"
+- name: Start and enable service uuidd
   systemd:
-    name: chronyd
+    name: uuidd
     state: started
     enabled: yes
 
-- name: Get status of chronyd
-  command: bash -lc "systemctl status chronyd"
+- name: Get status of uuidd
+  command: bash -lc "systemctl status uuidd"
   register: command_result
   ignore_errors: True
   changed_when: False
